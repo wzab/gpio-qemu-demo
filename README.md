@@ -16,7 +16,7 @@ Please note that I use `podman` in my demo. If you want, you may use `docker` in
 
 ## How to prepare and run the demo on Windows
 It is possible to run my demo in `docker` on Windows. The repository contains the `build.bat` file for building the image, and `runme.bat` for starting the container.
-Unfortunately, building the image is much slower on Windows than on Linux. 
+Unfortunately, building the image is much slower on Windows than on Linux. On my machine with 12-core Xeon and 64 GB of RAM, creating the image took 7500 seconds. During that time, 4900 seconds was spent on building Buildroot.
 You also need a VNC client for wndows (I use [TigerVNC](https://tigervnc.org/)).
 
 ## Running demo in the container's GUI
