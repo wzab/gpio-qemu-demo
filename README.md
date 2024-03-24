@@ -44,7 +44,7 @@ You also need a VNC client for wndows (I use [TigerVNC](https://tigervnc.org/)).
 Please note that my servicing of interrupts in Python is not perfect. Therefore, if you stop `gpiomon` with `CTRL+C`, you must once again activate the button to complete handling of the interrupt.
 I hope to fix this issue in the future.
 
-* The emulated GPIOs are also fully accessible via the old and obsolete sysfs interface:
+* The emulated GPIOs are also fully accessible via the old and obsolete sysfs interface (please note, that the base address for virtual GPIO is 480):
 ![obraz](https://github.com/wzab/gpio-qemu-demo/assets/2532225/a1355fa2-153f-44ac-a0b4-9d2cbdc8e75c)
 
 
