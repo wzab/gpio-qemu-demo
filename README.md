@@ -2,6 +2,7 @@
 This repository contains the files used to demonstrate the emulation of GPIO in QEMU based
 on the [vhost-device](https://github.com/rust-vmm/vhost-device). 
 I have slightly modified the original implementation and published it in [my fork, branch gpio-python](https://github.com/wzab/vhost-device/tree/gpio-python).
+Please note that I use `podman` in my demo. If you want, you may use `docker` instead.
 
 ## How to prepare the demo on Linux
 * Check out the repository. Go to the `gpio-qemu-demu/podman` subdirectory.
@@ -13,6 +14,10 @@ I have slightly modified the original implementation and published it in [my for
 * *On your workstation* run `vncviewer :7` or similar comman allowing you to connect to the container via VNC (the password is `test12`).
 ![obraz](https://github.com/wzab/gpio-qemu-demo/assets/2532225/9e43374d-433e-4637-85d6-397597bf1522)
 
+## How to prepare and run the demo on Windows
+It is possible to run my demo in `docker` on Windows. The repository contains the `build.bat` file for building the image, and `runme.bat` for starting the container.
+Unfortunately, building the image is much slower on Windows than on Linux. 
+You also need a VNC client for wndows (I use [TigerVNC](https://tigervnc.org/)).
 
 ## Running demo in the container's GUI
 * Start two terminals in GUI.
