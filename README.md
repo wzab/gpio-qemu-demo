@@ -32,7 +32,7 @@ You also need a VNC client for wndows (I use [TigerVNC](https://tigervnc.org/)).
 ![obraz](https://github.com/wzab/gpio-qemu-demo/assets/2532225/31c59102-6373-49d5-b99d-122db2094419)
 
 * Log as `root` (without password).
-* Load the driver for the virtual GPIO with `modprobe virtio-gpio`
+* Load the driver for the virtual GPIO with `modprobe gpio-virtio`
 ![obraz](https://github.com/wzab/gpio-qemu-demo/assets/2532225/74b80098-8946-484c-af2f-9c1e0854e581)
 
 * After that you should be able to use `gpio...` commands to check the available GPIOs (e.g. via `gpioinfo`) switch on/off LEDs:
