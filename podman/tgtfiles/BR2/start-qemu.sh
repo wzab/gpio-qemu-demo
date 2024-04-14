@@ -32,7 +32,7 @@ exec qemu-system-aarch64 -M virt -m 1G -cpu cortex-a53 -nographic \
 -object memory-backend-file,id=mem,size=1G,mem-path=/dev/shm,share=on \
 -numa node,memdev=mem  \
 -smp 1 -kernel Image -append "rootwait root=/dev/vda console=ttyAMA0" \
--netdev user,id=eth0 -device virtio-net-device,netdev=eth0 \
+-netdev user,hostfwd=tcp::8888-:8888,id=eth0 -device virtio-net-device,netdev=eth0 \
 -drive file=rootfs.ext4,if=none,format=raw,id=hd0 \
 -device virtio-blk-device,drive=hd0  ${EXTRA_ARGS} "$@"
 
