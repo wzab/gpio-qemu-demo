@@ -29,7 +29,7 @@ cd /home/dev/demo/BR2/buildroot-2024.02/output/images
 exec qemu-system-aarch64 -M virt -m 1G -cpu cortex-a53 -nographic \
 -chardev socket,path=/tmp/gpio.sock0,id=vgpio \
 -device vhost-user-gpio-pci,chardev=vgpio,id=gpio \
--object memory-backend-file,id=mem,size=1G,mem-path=/dev/shm,share=on \
+-object memory-backend-file,id=mem,size=1G,mem-path=/tmp,share=on \
 -numa node,memdev=mem  \
 -smp 1 -kernel Image -append "rootwait root=/dev/vda console=ttyAMA0" \
 -netdev user,hostfwd=tcp::8888-:8888,id=eth0 -device virtio-net-device,netdev=eth0 \

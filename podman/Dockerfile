@@ -41,7 +41,7 @@ RUN apt-get update && apt-get install -y \
 # Tools needed for compilation of libgpiod-2.1 and vhost-device
 RUN apt-get update && apt-get install -y \
  curl libclang-dev python3-venv libgirepository-1.0-1 gir1.2-gtk-3.0 \
- autoconf autoconf-archive libtool 
+ autoconf autoconf-archive libtool epiphany-browser
 
 ENV USER_NAME dev
 ENV PROJECT dev
