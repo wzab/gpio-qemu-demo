@@ -4,6 +4,8 @@ on the [vhost-device](https://github.com/rust-vmm/vhost-device).
 I have slightly modified the original implementation and published it in [my fork, branch gpio-python](https://github.com/wzab/vhost-device/tree/gpio-python).
 Please note that I use `podman` in my demo. If you want, you may use `docker` instead.
 
+*Later, I have prepared another [implementation in pure Python](https://github.com/wzab/wzab-code-lib/tree/main/qemu-extensions/vugpio). It may be easier to use, and perform better.*
+
 ## How to prepare the demo on Linux
 * Check out the repository. Go to the `gpio-qemu-demu/podman` subdirectory.
 * Run the script `build.sh` there. Building the image may be quite long, as it includes also compilation of the Buildroot Linux image.
